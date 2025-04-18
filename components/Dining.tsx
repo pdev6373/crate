@@ -77,7 +77,7 @@ export default function Dining() {
   return (
     <div
       id="section-dining"
-      className="py-4 md:py-8 max-w-5xl mx-auto text-center px-4 sm:px-6"
+      className="py-2 md:py-8 max-w-5xl mx-auto text-center px-4 sm:px-6"
     >
       <motion.div
         ref={headerRef}
