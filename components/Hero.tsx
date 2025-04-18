@@ -75,7 +75,7 @@ export default function Hero() {
       />
 
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <div className="mb-6 flex flex-col items-center">
+        <div className="mb-1 sm:mb-6 flex flex-col items-center">
           <motion.h1
             variants={container}
             initial="hidden"
