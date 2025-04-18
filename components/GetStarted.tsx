@@ -86,7 +86,7 @@ export default function GetStarted() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col items-center px-4 sm:px-6 py-8 sm:py-16 md:py-24 text-white z-10"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4">
               Eliminate your Food Budget
             </h2>
             <p className="text-lg sm:text-xl md:text-2xl max-w-xl">

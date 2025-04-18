@@ -119,7 +119,7 @@ export default function Dining() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col items-center px-4 sm:px-6 py-8 sm:py-10 md:py-16 text-white z-10"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-5 max-w-3xl">
+            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-5 max-w-3xl">
               {`We're Committed To 50% Of Our Menu`}
             </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-xl">
