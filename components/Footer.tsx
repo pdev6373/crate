@@ -29,7 +29,7 @@ const getIconDimension = (name: string) =>
 
 export default function Footer() {
   return (
-    <footer className="bg-red-600 text-white pt-12 pb-8 px-10 flex flex-col gap-14">
+    <footer className="bg-red-600 text-white pt-12 pb-8 px-10 flex flex-col gap-14 text-center">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0">
         <div className="flex items-center justify-start">
           <Link href="/">
@@ -38,6 +38,14 @@ export default function Footer() {
               alt="Crate Logo"
               width={150}
               height={34.5}
+              className="hidden lg:block"
+            />
+            <Image
+              src="/logo-white.svg"
+              alt="Crate Logo"
+              width={120}
+              height={27.6}
+              className="lg:hidden"
             />
           </Link>
         </div>
@@ -56,7 +64,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-1 items-center">
+      <div className="flex flex-col gap-1.5 items-center">
         <p className="text-sm text-white">
           Copyright © 2024 Crate Platforms LLC. All rights reserved.
         </p>

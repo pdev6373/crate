@@ -29,7 +29,7 @@ export default function Availability() {
   return (
     <div
       id="section-availability"
-      className="py-8 sm:py-12 md:py-16 max-w-5xl mx-auto text-center px-4 sm:px-6"
+      className="max-w-5xl mx-auto text-center px-4 sm:px-6"
     >
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black font-extralight py-2 mb-6 sm:mb-8 md:mb-12 lg:mb-14">
         Take Full Advantage

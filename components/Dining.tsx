@@ -77,7 +77,7 @@ export default function Dining() {
   return (
     <div
       id="section-dining"
-      className="py-8 sm:py-12 md:py-16 max-w-5xl mx-auto text-center px-4 sm:px-6"
+      className="py-4 md:py-8 max-w-5xl mx-auto text-center px-4 sm:px-6"
     >
       <motion.div
         ref={headerRef}
@@ -222,7 +222,7 @@ export default function Dining() {
                   transition={{ duration: 0.5 }}
                   className="bg-[#0080ff]/40 p-4 sm:p-6 lg:p-8 rounded-lg flex items-center justify-center"
                 >
-                  <p className="text-base sm:text-lg lg:text-xl text-white font-semibold">
+                  <p className="text-lg lg:text-xl text-white font-semibold">
                     {city}*
                   </p>
                 </motion.div>

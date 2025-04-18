@@ -81,8 +81,12 @@ export default function FAQ() {
               onClick={() => toggle(i)}
               className="w-full text-left px-4 py-3 flex justify-between items-center cursor-pointer"
             >
-              <span className="font-semibold text-xl">{faq.question}</span>
-              <span className="text-3xl">{openIndex === i ? '−' : '+'}</span>
+              <span className="font-semibold text-lg sm:text-xl">
+                {faq.question}
+              </span>
+              <span className="text-2xl lg:text-3xl">
+                {openIndex === i ? '−' : '+'}
+              </span>
             </button>
 
             <AnimatePresence>
@@ -95,7 +99,7 @@ export default function FAQ() {
                   transition={{ duration: 0.3 }}
                   className="overflow-hidden"
                 >
-                  <div className="text-lg px-4 py-3 text-gray-700">
+                  <div className="text-base sm:text-lg px-4 py-3 text-gray-700">
                     {faq.answer}
                   </div>
                 </motion.div>
