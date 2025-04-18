@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ export default function Header() {
         scrollY > 20 ? 'bg-[#fafafaf2] shadow-md' : 'bg-[#fafafad6] shadow-sm'
       }`}
     >
-      <a href="/" aria-label="Home page">
+      <Link href="/" aria-label="Home page">
         <Image
           src={'/logo.svg'}
           alt="Crate Logo"
@@ -45,7 +46,7 @@ export default function Header() {
           height={34.5}
           className="w-[110px] lg:w-[150px]"
         />
-      </a>
+      </Link>
 
       <div className="hidden items-center gap-4 lg:flex">
         <motion.button

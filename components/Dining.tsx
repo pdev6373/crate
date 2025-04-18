@@ -120,10 +120,10 @@ export default function Dining() {
             className="flex flex-col items-center px-4 sm:px-6 py-8 sm:py-10 md:py-16 text-white z-10"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-5 max-w-3xl">
-              We're Committed To 50% Of Our Menu
+              {`We're Committed To 50% Of Our Menu`}
             </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-xl">
-              We're adding more Takeout Partners Regularly
+              {`We're adding more Takeout Partners Regularly`}
             </p>
           </motion.div>
         </div>
@@ -215,7 +215,7 @@ export default function Dining() {
             className="flex flex-col gap-6 sm:gap-8"
           >
             <div className="grid min-[390px]:grid-cols-2 sm:grid-cols-3 2xl:grid-cols-4 gap-3 sm:gap-4">
-              {cities.map((city, index) => (
+              {cities.map((city) => (
                 <motion.div
                   key={city}
                   variants={fadeInUp}
