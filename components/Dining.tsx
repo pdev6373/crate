@@ -87,11 +87,11 @@ export default function Dining() {
         transition={{ duration: 0.6 }}
         className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 md:gap-14 mb-8 sm:mb-12 md:mb-16"
       >
-        <div className="h-1 w-20 sm:w-20 md:w-32 bg-[#0080ff]" />
+        <div className="h-1 w-20 sm:w-20 md:w-32 bg-[#0080ff] hidden sm:block" />
         <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-extralight py-2">
           Healthy Dining
         </h2>
-        <div className="h-1 w-20 sm:w-20 md:w-32 bg-[#0080ff]" />
+        <div className="h-1 w-20 sm:w-20 md:w-32 bg-[#0080ff] hidden sm:block" />
       </motion.div>
 
       <motion.div

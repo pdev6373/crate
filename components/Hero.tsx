@@ -32,6 +32,7 @@ const bubbleWord = {
 
 export default function Hero() {
   const headline = '🎉 Welcome to Crate!';
+  const headlineSmall = 'Welcome to Crate!';
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -79,9 +80,39 @@ export default function Hero() {
             variants={container}
             initial="hidden"
             animate="visible"
-            className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg flex flex-wrap justify-center gap-2"
+            className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg hidden flex-wrap justify-center gap-2 min-[390px]:flex"
           >
             {headline.split(' ').map((word, i) => (
+              <motion.span
+                key={i}
+                variants={bubbleWord}
+                className={`${fredoka.className} inline-block`}
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.h1>
+
+          <motion.h1
+            variants={container}
+            initial="hidden"
+            animate="visible"
+            className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg flex flex-wrap justify-center gap-2 min-[390px]:hidden"
+          >
+            <motion.span
+              variants={bubbleWord}
+              className={`${fredoka.className} inline-block`}
+            >
+              {`🎉`}
+            </motion.span>
+          </motion.h1>
+          <motion.h1
+            variants={container}
+            initial="hidden"
+            animate="visible"
+            className="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg flex flex-wrap justify-center gap-2 min-[390px]:hidden"
+          >
+            {headlineSmall.split(' ').map((word, i) => (
               <motion.span
                 key={i}
                 variants={bubbleWord}

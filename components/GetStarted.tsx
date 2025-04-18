@@ -55,11 +55,11 @@ export default function GetStarted() {
         transition={{ duration: 0.6 }}
         className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 md:gap-14 mb-8 sm:mb-12 md:mb-16"
       >
-        <div className="h-1 w-20 sm:w-[80px] md:w-[130px] bg-[#0080ff]" />
+        <div className="h-1 w-20 sm:w-[80px] md:w-[130px] bg-[#0080ff] hidden sm:block" />
         <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-extralight py-2">
           Getting Started
         </h2>
-        <div className="h-1 w-20 sm:w-[80px] md:w-[130px] bg-[#0080ff]" />
+        <div className="h-1 w-20 sm:w-[80px] md:w-[130px] bg-[#0080ff] hidden sm:block" />
       </motion.div>
 
       <motion.div
@@ -157,7 +157,7 @@ export default function GetStarted() {
                 />
                 <div className="absolute inset-0 bg-black/50 z-10" />
                 <div className="absolute inset-0 flex justify-center items-center">
-                  <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-bold max-w-[300px] z-10 px-4">
+                  <h3 className="text-white text-2xl md:text-3xl font-bold max-w-[300px] z-10 px-4">
                     {item.topContent}
                   </h3>
                 </div>

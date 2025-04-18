@@ -52,7 +52,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto flex flex-col gap-8 pb-20 px-4 mt-4">
+    <div className="w-full max-w-4xl mx-auto flex flex-col gap-8 pb-20 px-4 py-8 sm:py-12 md:py-16 mt-4 md:mt-5 lg:mt-6">
       <div className="text-center flex flex-col gap-5 lg:gap-6">
         <motion.div
           ref={headerRef}
@@ -61,11 +61,11 @@ export default function FAQ() {
           transition={{ duration: 0.6 }}
           className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 md:gap-14"
         >
-          <div className="h-1 w-20 sm:w-[80px] md:w-[130px] bg-[#0080ff]" />
+          <div className="h-1 w-20 sm:w-[80px] md:w-[130px] bg-[#0080ff] hidden sm:block" />
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-black font-extralight py-2">
             FAQs
           </h2>
-          <div className="h-1 w-20 sm:w-[80px] md:w-[130px] bg-[#0080ff]" />
+          <div className="h-1 w-20 sm:w-[80px] md:w-[130px] bg-[#0080ff] hidden sm:block" />
         </motion.div>
         <p className="text-lg sm:text-xl lg:text-2xl font-extralight">
           Get answers to frequently asked questions about Crate as a Consumer
